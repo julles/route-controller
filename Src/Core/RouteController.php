@@ -22,9 +22,18 @@ class RouteController
 		return $class;
 	}
 
+	public function kebab_case($str)
+	{
+		$snake = snake_case($str);
+
+		$kebab = str_replace("_", "-", $snake);
+
+		return $kebab;
+	}
+
 	public function camelCaseToUri($method,$var)
 	{
-		$str = kebab_case($var);
+		$str = $this->kebab_case($var);
 		$str = strtolower($str);
 		$str = str_replace($method, "", $str);
 		$str = substr($str,1);
