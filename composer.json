@@ -1,0 +1,19 @@
+{
+    "name": "muhamadrezaar/route-controller",
+    "description": "Route Controller for Laravel 5.3++",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhamad Reza Abdul Rohim",
+            "email": "reza.wikrama3@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Julles\\": "packages/RouteController/Src"
+        }
+    }
+}
