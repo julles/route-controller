@@ -1,7 +1,6 @@
 # Route Controller For Laravel 5.3++
 
 [![Total Downloads](https://poser.pugx.org/muhamadrezaar/route-controller/d/total.svg)](https://packagist.org/packages/muhamadrezaar/route-controller)
-[![Latest Stable Version](https://poser.pugx.org/muhamadrezaar/route-controller/v/stable.svg)](https://packagist.org/packages/muhamadrezaar/route-controller/v/stable.svg)
 [![License](https://poser.pugx.org/muhamadrezaar/route-controller/license.svg)](https://packagist.org/packages/muhamadrezaar/route-controller)
 
 
@@ -32,8 +31,10 @@ Julles\RouteControllerProvider::class,
 
 ## How to Use ?
 
+in route file (routes/web.php)
+
 ``` sh 
-	RouteController::build('tes','TesController');
+	\RouteController::build('tes','TesController');
 ```
 
 Samples Methods in Source Controller
