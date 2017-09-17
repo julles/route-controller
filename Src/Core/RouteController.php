@@ -82,8 +82,7 @@ class RouteController
 				if(strpos($method, $m) !== false)
 				{
 					$fixUri = $uri.'/'.$this->camelCaseToUri($m,$method);
-					
-					Route::$m($fixUri,$paramController."@".$method);
+					Route::$m($fixUri.'/{id1?}/{id2?}/{id3?}/{id4?}/{id5?}',$paramController."@".$method);
 				}
 			}
 		}
