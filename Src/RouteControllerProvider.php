@@ -13,7 +13,7 @@ class RouteControllerProvider extends ServiceProvider
 	public function register()
 	{
 		$this->app->bind('register-route-controller',function(){
-			return new \Julles\Routecontroller();
+			return new \Julles\RouteController();
 		});
 	}
 
